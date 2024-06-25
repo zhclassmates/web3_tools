@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web3 Tools</title>
+    <title>Web3 Tools and Resources</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,84 +12,121 @@
             padding: 0;
         }
         .container {
-            width: 80%;
+            width: 90%;
             margin: auto;
             overflow: hidden;
         }
         header {
             background: #35424a;
             color: #ffffff;
-            padding-top: 30px;
-            min-height: 70px;
+            padding: 20px 0;
             border-bottom: #e8491d 3px solid;
+            text-align: center;
         }
         header h1 {
             margin: 0;
-            padding: 0 20px;
             text-transform: uppercase;
         }
-        nav {
-            display: flex;
-            justify-content: space-around;
-            background: #e8491d;
-            padding: 10px;
+        .content {
+            padding: 20px;
         }
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-        .tools-section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+        .category {
             margin: 20px 0;
         }
-        .tool-card {
+        .category h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .link-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .link-list li {
             background: #fff;
+            margin: 5px 0;
+            padding: 10px;
             border: 1px solid #ddd;
             border-radius: 5px;
-            width: 30%;
-            margin: 10px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            padding: 15px;
-            text-align: center;
         }
-        .tool-card img {
-            max-width: 100px;
-            height: auto;
-        }
-        .tool-card h3 {
-            margin: 10px 0;
-            font-size: 18px;
+        .link-list a {
+            color: #333;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Web3 Tools</h1>
+            <h1>Web3 Tools and Resources</h1>
         </div>
     </header>
-    <nav>
-        <a href="wallets.html">Wallets</a>
-        <a href="analytics.html">Analytics</a>
-        <a href="other.html">Other</a>
-    </nav>
     <div class="container">
-        <section class="tools-section">
-            <div class="tool-card">
-                <img src="https://metamask.io/images/favicon-32x32.png" alt="MetaMask">
-                <h3>MetaMask</h3>
-                <p>Web3 Wallet</p>
+        <div class="content">
+            <!-- 工具 -->
+            <div class="category">
+                <h2>工具</h2>
+                <ul class="link-list">
+                    <li><a href="https://metamask.io">MetaMask</a> - Web3钱包</li>
+                    <li><a href="https://www.ledger.com">Ledger</a> - 硬件钱包</li>
+                    <li><a href="https://trezor.io">Trezor</a> - 硬件钱包</li>
+                </ul>
             </div>
-            <div class="tool-card">
-                <img src="https://www.ledger.com/favicon.ico" alt="Ledger">
-                <h3>Ledger</h3>
-                <p>Hardware Wallet</p>
+            <!-- 消息 -->
+            <div class="category">
+                <h2>消息</h2>
+                <ul class="link-list">
+                    <li><a href="https://decrypt.co">Decrypt</a> - 加密货币新闻</li>
+                    <li><a href="https://www.coindesk.com">CoinDesk</a> - 加密货币新闻</li>
+                    <li><a href="https://www.theblockcrypto.com">The Block</a> - 加密货币新闻</li>
+                </ul>
             </div>
-            <!-- Add more tool cards as needed -->
-        </section>
+            <!-- 链上数据 -->
+            <div class="category">
+                <h2>链上数据</h2>
+                <ul class="link-list">
+                    <li><a href="https://defillama.com">DefiLlama</a> - DeFi仪表板</li>
+                    <li><a href="https://etherscan.io">Etherscan</a> - 以太坊区块链浏览器</li>
+                    <li><a href="https://tokenview.com">Tokenview</a> - BTC铭文区块链浏览器</li>
+                </ul>
+            </div>
+            <!-- 交易所 -->
+            <div class="category">
+                <h2>交易所</h2>
+                <ul class="link-list">
+                    <li><a href="https://www.binance.com">Binance</a> - 加密货币交易所</li>
+                    <li><a href="https://www.coinbase.com">Coinbase</a> - 加密货币交易所</li>
+                    <li><a href="https://www.okx.com">OKX</a> - 数字货币交易所</li>
+                </ul>
+            </div>
+            <!-- 个人的博主 -->
+            <div class="category">
+                <h2>个人的博主</h2>
+                <ul class="link-list">
+                    <li><a href="https://twitter.com/lxiaolai">李笑来</a> - 加密货币投资者</li>
+                    <li><a href="https://twitter.com/AndreCronjeTech">Andre Cronje</a> - DeFi 开发者</li>
+                    <li><a href="https://twitter.com/zhusu">朱溯</a> - 投资者</li>
+                </ul>
+            </div>
+            <!-- 如何追踪地址 -->
+            <div class="category">
+                <h2>如何追踪地址</h2>
+                <ul class="link-list">
+                    <li><a href="https://debank.com">DeBank</a> - Web3投资组合追踪</li>
+                    <li><a href="https://bitinfocharts.com">BitInfoCharts</a> - 加密货币地址分析</li>
+                    <li><a href="https://www.whale-alert.io">Whale Alert</a> - 大额转账追踪</li>
+                </ul>
+            </div>
+            <!-- Web3事件 -->
+            <div class="category">
+                <h2>Web3事件</h2>
+                <ul class="link-list">
+                    <li><a href="https://www.coindesk.com/consensus">Consensus</a> - Coindesk的年度会议</li>
+                    <li><a href="https://www.ethdenver.com">ETHDenver</a> - 以太坊社区活动</li>
+                    <li><a href="https://www.devcon.org">Devcon</a> - 以太坊开发者大会</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>
