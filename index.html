@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web3 Tools</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -24,25 +23,27 @@
             min-height: 70px;
             border-bottom: #e8491d 3px solid;
         }
-        header a {
+        header h1 {
+            margin: 0;
+            padding: 0 20px;
+            text-transform: uppercase;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background: #e8491d;
+            padding: 10px;
+        }
+        nav a {
             color: #ffffff;
             text-decoration: none;
             text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            float: left;
-            display: inline;
-            padding: 0 20px 0 20px;
         }
         .tools-section {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
+            margin: 20px 0;
         }
         .tool-card {
             background: #fff;
@@ -67,11 +68,14 @@
 <body>
     <header>
         <div class="container">
-            <div id="branding">
-                <h1>Web3 Tools</h1>
-            </div>
+            <h1>Web3 Tools</h1>
         </div>
     </header>
+    <nav>
+        <a href="wallets.html">Wallets</a>
+        <a href="analytics.html">Analytics</a>
+        <a href="other.html">Other</a>
+    </nav>
     <div class="container">
         <section class="tools-section">
             <div class="tool-card">
