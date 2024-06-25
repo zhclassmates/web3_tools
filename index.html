@@ -20,8 +20,8 @@
             background: #35424a;
             color: #ffffff;
             padding: 20px 0;
-            border-bottom: #e8491d 3px solid;
             text-align: center;
+            border-bottom: #e8491d 3px solid;
         }
         header h1 {
             margin: 0;
@@ -34,24 +34,39 @@
             margin: 20px 0;
         }
         .category h2 {
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-radius: 5px;
             margin-bottom: 10px;
-            color: #333;
         }
         .link-list {
-            list-style-type: none;
-            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
         }
-        .link-list li {
+        .link-card {
             background: #fff;
-            margin: 5px 0;
-            padding: 10px;
             border: 1px solid #ddd;
             border-radius: 5px;
+            padding: 20px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            flex: 1 1 calc(33% - 40px);
+            box-sizing: border-box;
         }
-        .link-list a {
-            color: #333;
-            text-decoration: none;
+        .link-card img {
+            max-width: 100px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        .link-card h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .link-card p {
+            margin: 0;
+            color: #555;
         }
     </style>
 </head>
@@ -66,65 +81,149 @@
             <!-- 工具 -->
             <div class="category">
                 <h2>工具</h2>
-                <ul class="link-list">
-                    <li><a href="https://metamask.io">MetaMask</a> - Web3钱包</li>
-                    <li><a href="https://www.ledger.com">Ledger</a> - 硬件钱包</li>
-                    <li><a href="https://trezor.io">Trezor</a> - 硬件钱包</li>
-                </ul>
+                <div class="link-list">
+                    <div class="link-card">
+                        <img src="https://metamask.io/images/favicon-32x32.png" alt="MetaMask">
+                        <h3>MetaMask</h3>
+                        <p>Web3钱包</p>
+                    </div>
+                    <div class="link-card">
+                        <img src="https://www.ledger.com/favicon.ico" alt="Ledger">
+                        <h3>Ledger</h3>
+                        <p>硬件钱包</p>
+                    </div>
+                    <div class="link-card">
+                        <img src="https://trezor.io/favicon.ico" alt="Trezor">
+                        <h3>Trezor</h3>
+                        <p>硬件钱包</p>
+                    </div>
+                </div>
             </div>
             <!-- 消息 -->
             <div class="category">
                 <h2>消息</h2>
-                <ul class="link-list">
-                    <li><a href="https://decrypt.co">Decrypt</a> - 加密货币新闻</li>
-                    <li><a href="https://www.coindesk.com">CoinDesk</a> - 加密货币新闻</li>
-                    <li><a href="https://www.theblockcrypto.com">The Block</a> - 加密货币新闻</li>
-                </ul>
+                <div class="link-list">
+                    <div class="link-card">
+                        <img src="https://decrypt.co/favicon.ico" alt="Decrypt">
+                        <h3>Decrypt</h3>
+                        <p>加密货币新闻</p>
+                    </div>
+                    <div class="link-card">
+                        <img src="https://www.coindesk.com/favicon.ico" alt="CoinDesk">
+                        <h3>CoinDesk</h3>
+                        <p>加密货币新闻</p>
+                    </div>
+                    <div class="link-card">
+                        <img src="https://www.theblockcrypto.com/favicon.ico" alt="The Block">
+                        <h3>The Block</h3>
+                        <p>加密货币新闻</p>
+                    </div>
+                </div>
             </div>
             <!-- 链上数据 -->
             <div class="category">
                 <h2>链上数据</h2>
-                <ul class="link-list">
-                    <li><a href="https://defillama.com">DefiLlama</a> - DeFi仪表板</li>
-                    <li><a href="https://etherscan.io">Etherscan</a> - 以太坊区块链浏览器</li>
-                    <li><a href="https://tokenview.com">Tokenview</a> - BTC铭文区块链浏览器</li>
-                </ul>
+                <div class="link-list">
+                    <div class="link-card">
+                        <img src="https://defillama.com/favicon.ico" alt="DefiLlama">
+                        <h3>DefiLlama</h3>
+                        <p>DeFi仪表板</p>
+                    </div>
+                    <div class="link-card">
+                        <img src="https://etherscan.io/favicon.ico" alt="Etherscan">
+                        <h3>Etherscan</h3>
+                        <p>以太坊区块链浏览器</p>
+                    </div>
+                    <div class="link-card">
+                        <img src="https://tokenview.com/favicon.ico" alt="Tokenview">
+                        <h3>Tokenview</h3>
+                        <p>BTC铭文区块链浏览器</p>
+                    </div>
+                </div>
             </div>
             <!-- 交易所 -->
             <div class="category">
                 <h2>交易所</h2>
-                <ul class="link-list">
-                    <li><a href="https://www.binance.com">Binance</a> - 加密货币交易所</li>
-                    <li><a href="https://www.coinbase.com">Coinbase</a> - 加密货币交易所</li>
-                    <li><a href="https://www.okx.com">OKX</a> - 数字货币交易所</li>
-                </ul>
+                <div class="link-list">
+                    <div class="link-card">
+                        <img src="https://www.binance.com/favicon.ico" alt="Binance">
+                        <h3>Binance</h3>
+                        <p>加密货币交易所</p>
+                    </div>
+                    <div class="link-card">
+                        <img src="https://www.coinbase.com/favicon.ico" alt="Coinbase">
+                        <h3>Coinbase</h3>
+                        <p>加密货币交易所</p>
+                    </div>
+                    <div class="link-card">
+                        <img src="https://www.okx.com/favicon.ico" alt="OKX">
+                        <h3>OKX</h3>
+                        <p>数字货币交易所</p>
+                    </div>
+                </div>
             </div>
             <!-- 个人的博主 -->
             <div class="category">
                 <h2>个人的博主</h2>
-                <ul class="link-list">
-                    <li><a href="https://twitter.com/lxiaolai">李笑来</a> - 加密货币投资者</li>
-                    <li><a href="https://twitter.com/AndreCronjeTech">Andre Cronje</a> - DeFi 开发者</li>
-                    <li><a href="https://twitter.com/zhusu">朱溯</a> - 投资者</li>
-                </ul>
+                <div class="link-list">
+                    <div class="link-card">
+                        <img src="https://twitter.com/favicon.ico" alt="李笑来">
+                        <h3>李笑来</h3>
+                        <p>加密货币投资者</p>
+                    </div>
+                    <div class="link-card">
+                        <img src="https://twitter.com/favicon.ico" alt="Andre Cronje">
+                        <h3>Andre Cronje</h3>
+                        <p>DeFi 开发者</p>
+                    </div>
+                    <div class="link-card">
+                        <img src="https://twitter.com/favicon.ico" alt="朱溯">
+                        <h3>朱溯</h3>
+                        <p>投资者</p>
+                    </div>
+                </div>
             </div>
             <!-- 如何追踪地址 -->
             <div class="category">
                 <h2>如何追踪地址</h2>
-                <ul class="link-list">
-                    <li><a href="https://debank.com">DeBank</a> - Web3投资组合追踪</li>
-                    <li><a href="https://bitinfocharts.com">BitInfoCharts</a> - 加密货币地址分析</li>
-                    <li><a href="https://www.whale-alert.io">Whale Alert</a> - 大额转账追踪</li>
-                </ul>
+                <div class="link-list">
+                    <div class="link-card">
+                        <img src="https://debank.com/favicon.ico" alt="DeBank">
+                        <h3>DeBank</h3>
+                        <p>Web3投资组合追踪</p>
+                    </div>
+                    <div class="link-card">
+                        <img src="https://bitinfocharts.com/favicon.ico" alt="BitInfoCharts">
+                        <h3>BitInfoCharts</h3>
+                        <p>加密货币地址分析</p>
+                    </div>
+                    <div class="link-card">
+                        <img src="https://www.whale-alert.io/favicon.ico" alt="Whale Alert">
+                        <h3>Whale Alert</h3>
+                        <p>大额转账追踪</p>
+                    </div>
+                </div>
             </div>
             <!-- Web3事件 -->
             <div class="category">
                 <h2>Web3事件</h2>
-                <ul class="link-list">
-                    <li><a href="https://www.coindesk.com/consensus">Consensus</a> - Coindesk的年度会议</li>
-                    <li><a href="https://www.ethdenver.com">ETHDenver</a> - 以太坊社区活动</li>
-                    <li><a href="https://www.devcon.org">Devcon</a> - 以太坊开发者大会</li>
-                </ul>
+                <div class="link-list">
+                    <div class="link-card">
+                        <img src="https://www.coindesk.com/consensus/favicon.ico" alt="Consensus">
+                        <h3>Consensus</h3>
+                        <p>Coindesk的年度会议</p>
+                    </div>
+                    <div class="link-card">
+                        <img src="https://www.ethdenver.com/favicon.ico" alt="ETHDenver">
+                        <h3>ETHDenver</h3>
+                        <p>以太坊社区活动</p>
+                    </div>
+                    <div class="link-card">
+                        <img src="https://www.devcon.org/favicon.ico" alt="Devcon">
+                        <h3>Devcon</h3>
+                        <p>以太坊开发者大会</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
